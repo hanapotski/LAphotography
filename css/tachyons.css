@@ -1,13 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli:300,400,700|Tangerine
-:400,700");
-
-.muli {
-  font-family: 'Muli', sans-serif;
-}
-
-.tangerine {
-  font-family: 'Tangerine', cursive;
-}
+@import url("custom.css");
 
 /*! TACHYONS v4.8.1 | http://tachyons.io */
 /*
