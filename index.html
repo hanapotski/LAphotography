@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/tachyons.css">
     <link href="css/lightbox.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
   </head>
   <body>
     <div class="">
@@ -40,6 +41,8 @@
           <a class="f6 link bg-animate black-80 dim gray dib pa2 ph4-l" href="pricing.html">PRICING</a>
           <a class="f6 link bg-animate black-80 ow dim gray dib pa2 ph4-l" href="contact.html">CONTACT</a>
         </nav>
+        
+        
       </header>
       
       <!-- CONTENT -->
@@ -48,15 +51,18 @@
           <div class="aspect-ratio aspect-ratio--1x1">
             <a href="img/sample.jpg" data-lightbox="images" data-title="My caption">
               Image #1
-              <img src="img/sample.jpg" 
+              <img style="background-image:url(img/sample.jpg);"
             class="db bg-center cover aspect-ratio--object" />
           </a>
           </div>
         </article>
         <article class="fl w-100 w-50-m  w-25-ns pa2 pa1-ns swipebox">
           <div class="aspect-ratio aspect-ratio--1x1">
-            <a href="img/sample.jpg" data-lightbox="images"><img src="img/sample.jpg" 
-            class="db bg-center cover aspect-ratio--object" /></a>
+            <a href="img/sample.jpg" data-lightbox="images" data-title="My caption">
+              Image #1
+              <img style="background-image:url(img/sample.jpg);"
+            class="db bg-center cover aspect-ratio--object" />
+          </a>
           </div>
         </article>
         
@@ -80,5 +86,13 @@
       
     </div>
     <script src="js/lightbox-plus-jquery.js" charset="utf-8"></script>
+    <script>
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
+    </script>
   </body>
 </html>
